@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Genius Game GSORT</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/bootstrap.css" rel="stylesheet">
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+<style>
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+	height: 450px
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+	padding-top: 20px;
+	background-color: #f1f1f1;
+	height: 100%;
+}
+/*Tira os padings das imagens*/
+.col-xs-4 {
+	padding: 0;
+}
+
+.row {
+	padding: 0;
+	margin: auto;
+}
+/* Set black background color, white text and some padding */
+footer {
+	background-color: #555;
+	color: white;
+	padding: 25px;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+	.sidenav {
+		height: auto;
+		padding: 15px;
+	}
+	.row.content {
+		height: auto;
+	}
+	/*Deixando a imagens juntas com dispositivos menos*/
+}
+
+.modal {
+	text-align: center;
+	padding: 0 !important;
+}
+
+.modal:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -4px;
+}
+
+.modal-dialog {
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+}
+</style>
+</head>
+<body>
+	<!--Menu Principal do Cabeçalho -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#myNavbar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Meu galinheiro</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="#">Sobre</a></li>
+				</ul>
+				</div>
+		</div>
+	</nav>
+
+	<!--Título do Header -->
+	<div class="page-header">
+		<h1 class="text-center">Meu Galinheiro</h1>
+		<p class="text-center">O controle do seu galinheiro na palma de sua mão</p>
+	</div>
+
+	<!--Container Principal que separa as colunas -->
+	<div class="container-fluid text-center container">
+		<div class="row content ">
+			<!--  Coluna da Esquerda -->
+			<div class="col-sm-3 btn-group-vertical">
+				<!-- Trigger the modal with a button -->
+<!-- 				<button type="button" class="btn btn-info btn-lg" id="iniciar">Iniciar</button> -->
+<!-- 				<button type="button" class="btn btn-info btn-lg" id="nome">Nome</button> -->
+<!-- 				<button type="button" class="btn btn-info btn-lg" id="ranking">Ranking</button> -->
+			</div>
+			
+			<!--Coluna Central-->
+			<div class="col-sm-7">
+				<div class="row" style="padding-left: 100px">
+					<div class="col-xs-4" id="onButton">
+						<img id="image2" src="img/on.png" class="img-responsive"
+							alt="Led Azul"> <img src="img/on.png"
+							class="img-responsive" alt="Led Vermelho Aceso"
+							style="display: none;">
+					</div>
+					<div class="col-xs-4" id="offButton">
+						<img id="image1" src="img/off.png" class="img-responsive"
+							alt="Led Vermelho"> <img src="img/off.png"
+							class="img-responsive" alt="Led Vermelho Aceso"
+							style="display: none;">
+					</div>
+				</div> 
+			</div>
+			
+			<!--Coluna da Direita-->
+
+			</div>
+		</div>
+	</div>
+
+	<!--Rodapé
+	<footer class="container-fluid text-center">
+		<p>GSORT IFBA 2017</p>
+	</footer>-->
+</body>
+
+</html>
